@@ -1,0 +1,314 @@
+
+.app-container {
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+
+.center-box {
+  width: 400px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.12);
+}
+
+.center-box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+.center-box input,
+.center-box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fafafa;
+}
+
+.center-box button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.center-box button:hover {
+  background: #27ae60;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.task-card {
+  width: 230px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+}
+
+.task-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.task-card p {
+  margin: 0 0 15px;
+  font-size: 15px;
+  color: #555;
+}
+
+
+.task-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.card-btn-blue {
+  background: #3498db;
+  color: white;
+}
+
+.card-btn-blue:hover {
+  background: #2980b9;
+}
+
+
+.card-btn-red {
+  background: #e74c3c;
+  color: white;
+}
+
+.card-btn-red:hover {
+  background: #c0392b;
+}
+
+
+.card-btn-yellow {
+  background: #f1c40f;
+  color: #000;
+}
+
+.card-btn-yellow:hover {
+  background: #d4ac0d;
+}
+
+.overlay .center-box,
+.modal .card {
+  color: #222 !important;      
+  background: #ffffff !important; 
+  border-radius: 12px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .card {
+  color: black !important;
+  background: white;
+  padding: 25px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.center-box,
+.center-box * ,
+.modal .card,
+.modal .card * {
+  color: #222 !important;    
+}
+
+
+input.input,
+select.input,
+textarea.input {
+  color: #222 !important;     
+  background: #fff;
+}
+
+
+input.input::placeholder {
+  color: #555 !important;      
+}
+
+
+.title {
+  color: #111 !important;      
+}
+
+
+.task-status span {
+  color: #333 !important;
+}
+
+.center-box input.input {
+  width: 100%;
+  padding: 16px 12px;  
+  font-size: 18px;    
+  margin-bottom: 12px; 
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
+.center-box button {
+  width: 100%;
+  padding: 12px;      
+  font-size: 17px;
+}
+
+.center-box .form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.center-box .form-group input.input {
+  flex: 3;          
+  padding: 14px;
+  font-size: 16px;
+  width:90%
+}
+
+.center-box .form-group button {
+  flex: 1;          
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 7px;
+  width:90%
+}
+.center-box .form-group {
+  display: flex;
+  gap: 10px;          
+  align-items: center;
+}
+
+.center-box .form-group input.input {
+  flex: 3;             
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.center-box .form-group button {
+  flex: 1;             
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #2ecc71;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.center-box .form-group button:hover {
+  background: #27ae60;
+}
+.center-box .form-group {
+  display: flex;
+  gap: 10px;            
+  align-items: center;   
+}
+
+.center-box .form-group input.input {
+  flex: 3;              
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.center-box .form-group .button-group {
+  flex: 2;              
+  display: flex;
+  gap: 10px;             
+}
+
+.center-box .form-group .button-group button {
+  flex: 1;               
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-add {
+  background: #2ecc71;
+  color: white;
+}
+
+.button-add:hover {
+  background: #27ae60;
+}
+
+.button-clear {
+  background: #e74c3c;
+  color: white;
+}
+
+.button-clear:hover {
+  background: #c0392b;
+}
+
+
+
+
+ 
+
+
+ 
