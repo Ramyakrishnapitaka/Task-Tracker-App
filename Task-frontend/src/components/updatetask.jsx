@@ -6,7 +6,7 @@ function Updatetask({ task, onUpdateSuccess }) {
   const [status, setStatus] = useState(task.status);
 
   const handleUpdate = async () => {
-    await fetch(`http://localhost:8976/api/task/${task._id}`, {
+    await fetch(`https://task-tracker-app-0010.onrender.com/api/task/${task._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, status }),
