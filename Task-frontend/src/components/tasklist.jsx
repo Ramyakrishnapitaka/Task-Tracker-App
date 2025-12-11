@@ -2,7 +2,7 @@ import "../App.css";
 
 function TaskList({ tasks, fetchTasks, setEditingTask }) {
   const updateStatus = async (id) => {
-    await fetch(`http://localhost:8976/api/task/${id}`, {
+    await fetch(`https://task-tracker-app-0010.onrender.com/api/task/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status: "completed" }),
@@ -11,7 +11,7 @@ function TaskList({ tasks, fetchTasks, setEditingTask }) {
   };
 
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:8976/api/task/${id}`, {
+    await fetch(`https://task-tracker-app-0010.onrender.com/api/task/${id}`, {
       method: "DELETE",
     });
     fetchTasks();
