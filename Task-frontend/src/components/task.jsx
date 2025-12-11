@@ -9,7 +9,7 @@ function AddTask({ onTaskAdded }) {
 
     const newTask = { title: task, status: "pending" };
 
-    await fetch("http://localhost:8976/api/task", {
+    await fetch("https://task-tracker-app-0010.onrender.com/api/task", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newTask),
